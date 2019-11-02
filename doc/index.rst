@@ -21,3 +21,4 @@ Additional Documentation
    documentation
    testing
    continuous_integration
+   tips

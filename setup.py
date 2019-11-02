@@ -10,9 +10,13 @@ RELEASE = VERSION
 
 if __name__ == "__main__":
 
+    # List of all the required packages.
     install_requires = [
         'arcade',
     ]
+
+    # This project uses data classes. But data clases were introduced in 3.7.
+    # So if we are using 3.6, use an add-on package that backports it.
     if sys.version_info[0] == 3 and sys.version_info[1] == 6:
         install_requires.append('dataclasses')
 
@@ -22,10 +26,12 @@ if __name__ == "__main__":
         VERSION = VERSION.replace("-beta", "b")
         VERSION = VERSION.replace("-rc", "r")
 
+    # Grab the long description out of the README
     fname = path.join(path.dirname(path.abspath(__file__)), "README.rst")
     with open(fname, "r") as f:
         long_desc = f.read()
 
+    # Here are our setup parameters
     setup(
           name="arcade",
           version=RELEASE,
@@ -34,7 +40,7 @@ if __name__ == "__main__":
           author="Paul Vincent Craven",
           author_email="paul.craven@simpson.edu",
           license="MIT",
-          url="http://arcade.academy",
+          url="https://pypi-package-example.readthedocs.io/en/latest/",
           download_url="http://arcade.academy",
           install_requires=install_requires,
           packages=["pypi_package_example",
@@ -55,10 +61,8 @@ if __name__ == "__main__":
           test_suite="tests",
           package_data={'arcade': ['examples/images/*.png']},
           project_urls={
-                        'Documentation': 'https://arcade.academy/',
-                        'Example Code ': 'http://arcade.academy/examples/index.html',
-                        'Issue Tracker': 'https://github.com/pvcraven/arcade/issues',
-                        'Source': 'https://github.com/pvcraven/arcade',
-                        'On-line Book': 'http://learn.arcade.academy/',
+                        'Documentation': 'https://pypi-package-example.readthedocs.io/en/latest/',
+                        'Issue Tracker': 'https://github.com/pvcraven/pypi_package_example/issues',
+                        'Source': 'https://github.com/pvcraven/pypi_package_example',
           },
          )
