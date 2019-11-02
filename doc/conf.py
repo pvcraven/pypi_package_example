@@ -13,8 +13,7 @@ RELEASE = VERSION
 
 # -*- coding: utf-8 -*-
 #
-# Arcade documentation build configuration file, created by
-# sphinx-quickstart on Mon Dec 28 23:02:22 2015.
+# Documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -70,7 +69,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Arcade'
+project = 'PyPi Package Example'
 copyright = '2019, Paul Vincent Craven'
 author = 'Paul Vincent Craven'
 
@@ -226,7 +225,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Arcadedoc'
+htmlhelp_basename = 'pypi_package_example_doc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -248,7 +247,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Arcade.tex', 'Arcade Documentation',
+  (master_doc, 'pypi_package_example.tex', 'PyPi Package Example Documentation',
    'Paul Vincent Craven', 'manual'),
 ]
 
@@ -278,7 +277,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'arcade', 'Arcade Documentation',
+    (master_doc, 'pypi_package_example', 'PyPi Package Example Documentation',
      [author], 1)
 ]
 
@@ -292,8 +291,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'Arcade', 'Arcade Documentation',
-   author, 'Arcade', 'One line description of project.',
+  (master_doc, 'pypi_package_example', 'PyPi Package Example Documentation',
+   author, 'pypi_package_example', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -385,33 +384,5 @@ intersphinx_mapping = {'python': ('http://docs.python.org/3', None),
                        'numpy': ('http://docs.scipy.org/doc/numpy', None)}
 
 
-def source_read(app, docname, source):
-
-    # print(f"  XXX Reading {docname}")
-    import os
-    file_path = os.path.dirname(os.path.abspath(__file__))
-    os.chdir(file_path)
-
-
-def post_process(app, exception):
-
-    # The API docs include the submodules the commands are in. This is confusing
-    # so let's remove them.
-    replace_list = [
-        [".window_commands.", "."],
-        [".draw_commands.", "."],
-        [".buffered_draw_commands.", "."],
-        [".text.", "."],
-        [".application.", "."],
-        [".geometry.", "."],
-        [".sprite_list.", "."],
-        [".sprite.", "."],
-        [".physics_engines.", "."],
-        [".sound.", "."]
-    ]
-
-
 def setup(app):
     app.add_stylesheet("css/custom.css")
-    app.connect('source-read', source_read)
-    app.connect('build-finished', post_process)

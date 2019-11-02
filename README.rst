@@ -21,7 +21,7 @@ Latest Release
 
 Latest version is 1.0.0 released 2019-11-02.
 
-Release notes: http://arcade.academy/release_notes.html
+Release notes: https://pypi-package-example.readthedocs.io/
 
 Contact the Maintainer
 ----------------------
