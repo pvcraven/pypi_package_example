@@ -1,5 +1,3 @@
-import pytest
-import sys
 import pypi_package_example
 
 
