@@ -11,6 +11,10 @@ This is a sample PyPi library
     :alt: first-timers-only Friendly
     :target: http://www.firsttimersonly.com/
 
+.. image:: https://coveralls.io/repos/github/pvcraven/pypi_package_example/badge.svg?branch=master
+    :target: https://coveralls.io/github/pvcraven/pypi_package_example?branch=master
+
+
 Documentation
 -------------
 
