@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
+import os
+
 # Run the generate quick API index script
 # Then generate thumbnails if they do not exist
-import runpy
 import sys
-import os
 
 BUILD = 0
 VERSION = "1.0.0"
@@ -24,7 +24,7 @@ RELEASE = VERSION
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath(".."))
 
 # -- General configuration ------------------------------------------------
 
@@ -35,43 +35,36 @@ sys.path.insert(0, os.path.abspath('..'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode',
+    "sphinx.ext.autodoc",
+    "sphinx.ext.doctest",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.todo",
+    "sphinx.ext.coverage",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.ifconfig",
+    "sphinx.ext.viewcode",
 ]
-
-try:
-    import sphinxcontrib.spelling
-except ImportError:
-    pass
-else:
-    extensions.append("sphinxcontrib.spelling")
 
 spelling_word_list_filename = "wordlist.txt"
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ".rst"
 
 # The encoding of source files.
 # source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = "index"
 
 # General information about the project.
-project = 'PyPi Package Example'
-copyright = '2019, Paul Vincent Craven'
-author = 'Paul Vincent Craven'
+project = "PyPi Package Example"
+copyright_text = "2019, Paul Vincent Craven"
+author = "Paul Vincent Craven"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -116,7 +109,7 @@ exclude_patterns = []
 # show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
 
 # A list of ignored prefixes for module index sorting.
 # modindex_common_prefix = []
@@ -132,7 +125,7 @@ todo_include_todos = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -162,7 +155,7 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -225,30 +218,32 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'pypi_package_example_doc'
+htmlhelp_basename = "pypi_package_example_doc"
 
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-                  # The paper size ('letterpaper' or 'a4paper').
-                  # 'papersize': 'letterpaper',
-
-                  # The font size ('10pt', '11pt' or '12pt').
-                  # 'pointsize': '10pt',
-
-                  # Additional stuff for the LaTeX preamble.
-                  # 'preamble': '',
-
-                  # Latex figure (float) alignment
-                  # 'figure_align': 'htbp',
+    # The paper size ('letterpaper' or 'a4paper').
+    # 'papersize': 'letterpaper',
+    # The font size ('10pt', '11pt' or '12pt').
+    # 'pointsize': '10pt',
+    # Additional stuff for the LaTeX preamble.
+    # 'preamble': '',
+    # Latex figure (float) alignment
+    # 'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'pypi_package_example.tex', 'PyPi Package Example Documentation',
-   'Paul Vincent Craven', 'manual'),
+    (
+        master_doc,
+        "pypi_package_example.tex",
+        "PyPi Package Example Documentation",
+        "Paul Vincent Craven",
+        "manual",
+    ),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -277,8 +272,13 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pypi_package_example', 'PyPi Package Example Documentation',
-     [author], 1)
+    (
+        master_doc,
+        "pypi_package_example",
+        "PyPi Package Example Documentation",
+        [author],
+        1,
+    )
 ]
 
 # If true, show URL addresses after external links.
@@ -291,9 +291,15 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'pypi_package_example', 'PyPi Package Example Documentation',
-   author, 'pypi_package_example', 'One line description of project.',
-   'Miscellaneous'),
+    (
+        master_doc,
+        "pypi_package_example",
+        "PyPi Package Example Documentation",
+        author,
+        "pypi_package_example",
+        "One line description of project.",
+        "Miscellaneous",
+    ),
 ]
 
 # Documents to append as an appendix to all manuals.
@@ -315,7 +321,7 @@ texinfo_documents = [
 epub_title = project
 epub_author = author
 epub_publisher = author
-epub_copyright = copyright
+epub_copyright = copyright_text
 
 # The basename for the epub file. It defaults to the project name.
 # epub_basename = project
@@ -355,7 +361,7 @@ epub_copyright = copyright
 # epub_post_files = []
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
+epub_exclude_files = ["search.html"]
 
 # The depth of the table of contents in toc.ncx.
 # epub_tocdepth = 3
@@ -380,8 +386,10 @@ epub_exclude_files = ['search.html']
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'python': ('http://docs.python.org/3', None),
-                       'numpy': ('http://docs.scipy.org/doc/numpy', None)}
+intersphinx_mapping = {
+    "python": ("http://docs.python.org/3", None),
+    "numpy": ("http://docs.scipy.org/doc/numpy", None),
+}
 
 
 def setup(app):

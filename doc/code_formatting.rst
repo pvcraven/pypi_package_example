@@ -6,3 +6,4 @@ Getting Code Formatted Correctly
 * Inspect Code in PyCharm
 * Use Black
 * flake8
+* pre-commit
