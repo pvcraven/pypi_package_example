@@ -26,8 +26,6 @@ matrix:
         - choco install python
         - python -m pip install --upgrade pip
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
-  allow_failures:
-    - os: windows
   fast_fail: true
 addons:
   apt:
@@ -39,9 +37,9 @@ addons:
     - python-gst-1.0
 install:
   - pip3 install --upgrade pip
-  - pip3 install -r requirements.txt -r requirements_dev.txt
+  - pip3 install -r requirements.txt
 before_script: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 script:
-  - pytest --ignore=tests/unit2  # TODO: remove the --ignore
+  - pytest
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then pytest tests/unit2; fi
 after_success: coveralls

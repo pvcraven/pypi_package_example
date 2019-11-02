@@ -5,3 +5,6 @@ Building and Deployment
 * ``requirements.txt``
 * ``build``
 * ``dist``
+
+* bdist / wheels
+* Twine

@@ -21,4 +21,5 @@ Additional Documentation
    documentation
    testing
    continuous_integration
+   code_formatting
    tips

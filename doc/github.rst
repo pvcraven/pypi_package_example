@@ -1,7 +1,10 @@
-GitHub and GitHug Community
+GitHub and GitHub Community
 ===========================
 
 * ``README.md`` or ``README.rst``
+
+  * Badges
+
 * ``CODE_OF_CONDUCT.md``
 * ``CONTRIBUTING.md``
 * ``license.md``
