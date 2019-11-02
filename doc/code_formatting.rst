@@ -5,3 +5,4 @@ Getting Code Formatted Correctly
 * Margin comments in PyCharm
 * Inspect Code in PyCharm
 * Use Black
+* flake8

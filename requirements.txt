@@ -3,3 +3,5 @@ sphinx-rtd-theme
 wheel
 black
 pytest
+coveralls
+flake8
