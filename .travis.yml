@@ -8,7 +8,11 @@ matrix:
     - name: "Python 3.7 on Windows"
       python: '3.7'
       os: windows
-      env: PYTHONPATH=../pypi_package_example
+      language: bash
+      before_install:
+        - choco install python
+        - python -m pip install --upgrade pip
+      env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
 #    - name: "Python 3.8 on xenial"
 #      python: '3.8'
 #      dist: xenial
