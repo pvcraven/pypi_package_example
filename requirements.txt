@@ -5,3 +5,4 @@ black
 pytest
 coveralls
 flake8
+pytest-cov
