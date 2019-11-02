@@ -1,0 +1,5 @@
+[run]
+source = pypi_package_example
+omit =
+    ./tests/*
+    ./doc/*
