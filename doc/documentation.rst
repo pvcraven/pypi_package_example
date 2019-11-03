@@ -4,7 +4,7 @@ Package Documentation Files
 Talk about
 
 * Sphinx
-* RST
+* MD and RST
 * Auto-pull code docs
 * ReadTheDocs
 

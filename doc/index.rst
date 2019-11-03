@@ -1,15 +1,16 @@
-Creating a PyPi Package
-=======================
+Creating a Python Package
+=========================
 
-PyPi Package Example API
+Creating a Python module/package can be as simple as two files.
 
-.. toctree::
-   :maxdepth: 4
+You can improve
+your module to include documentation. With additional support files, your
+module can support automated building,
+deployment, testing,
+pre-commit hooks, auto-code formatting, and more.
 
-   api
-
-Additional Documentation
-========================
+Documentation
+-------------
 
 .. toctree::
    :maxdepth: 4
@@ -23,3 +24,11 @@ Additional Documentation
    continuous_integration
    code_formatting
    tips
+
+Application Programming Interface
+---------------------------------
+
+.. toctree::
+   :maxdepth: 4
+
+   api

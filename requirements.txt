@@ -7,3 +7,4 @@ coveralls
 flake8
 pytest-cov
 pre-commit
+sphinxcontrib-spelling

@@ -1,12 +1,12 @@
-Contributing to Arcade
-======================
+Contributing to the PyPi Package Example
+========================================
 
 Suggest Improvements
 --------------------
 
 Open up issues:
 
-https://github.com/pvcraven/arcade/issues
+https://github.com/pvcraven/pypi_package_example/issues
 
 Fix Bugs or Implement Features
 ------------------------------
