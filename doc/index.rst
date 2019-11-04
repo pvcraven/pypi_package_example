@@ -24,6 +24,7 @@ Documentation
    testing
    continuous_integration
    code_formatting
+   versioning
    tips
 
 Application Programming Interface
