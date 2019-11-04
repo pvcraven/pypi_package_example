@@ -11,7 +11,8 @@ documentation.
   and hit the 'Raw' button to see the source.
 
   * Badges - Badges are small graphics you can stick on your site to visually
-    list information about your project. See this project's `README.rst`_.
+    list information about your project. The README is a good spot for them.
+    See this project's `README.rst`_. For more info see :ref:`Badges`.
 
 * ``CODE_OF_CONDUCT.md`` Public projects should have a code of conduct. Add it
   before you need one, not after. See GitHub's `Code of Conduct`_ suggestions,
@@ -19,11 +20,14 @@ documentation.
 * ``CONTRIBUTING.md`` Encourage contributions to your project by telling
   interested developers how to get started.
 * ``license.md`` Post a license for how people can use the software. See
-  `Choose a License`_ for help in selecting one.
+  `Choose a License`_ for help in selecting one. If other people contribute to
+  your project, they do so under the license you publish. Changing the license
+  on your project should involve the buy-in of all contributors. This isn't easy
+  with a popular open-source project, so choose wisely the first time.
 * ``.github/ISSUE_TEMPLATE/bug_report.md`` When people report a bug, GitHub
   will use the contents of this file as a template. This file, and similar ones
-  like ``pull_request_template.md`` have a few different places they can reside
-  in. I like putting them in ``.github`` rather than pollute the root directory.
+  like ``pull_request_template.md`` have a few different places where GitHub will
+  look for them. I like putting them in ``.github`` rather than pollute the root directory.
   You can also have multiple templates, depending on if it is a bug, feature
   request, etc.
 * ``.github/PULL_REQUEST_TEMPLATE/pull_request_template.md`` When developers create

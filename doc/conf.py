@@ -43,7 +43,6 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.ifconfig",
     "sphinx.ext.viewcode",
-    "sphinxcontrib.spelling",
 ]
 
 spelling_word_list_filename = "wordlist.txt"
