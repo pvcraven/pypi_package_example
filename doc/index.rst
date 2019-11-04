@@ -20,6 +20,7 @@ Documentation
    github
    building_and_deployment
    documentation
+   badges
    testing
    continuous_integration
    code_formatting

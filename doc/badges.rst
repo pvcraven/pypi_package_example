@@ -1,7 +1,8 @@
-Welcome to The Sample PyPi Library!
-===================================
+Badges
+======
 
-This is a sample PyPi library
+ShieldsIO_
+
 
 .. image:: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
     :target: http://makeapullrequest.com
@@ -20,19 +21,5 @@ This is a sample PyPi library
 .. image:: https://img.shields.io/github/commit-activity/w/pvcraven/pypi_package_example
     :alt: GitHub commit activity
 
-Documentation
--------------
 
-* For full documentation see http://arcade.academy
-
-Latest Release
---------------
-
-Latest version is 1.0.0 released 2019-11-02.
-
-Release notes: https://pypi-package-example.readthedocs.io/
-
-Contact the Maintainer
-----------------------
-
-paul@cravenfamily.com
+.. _ShieldsIO: https://shields.io/
