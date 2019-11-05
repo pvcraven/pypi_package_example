@@ -1,9 +1,12 @@
 Package Documentation Files
 ===========================
 
-Markup Languages
-----------------
-Sphinx_ - Sphinx is a popular tool for creating web documentation for Python projects. It
+Documenting your project is important if you want anyone else to use it.
+Documentation is done using a markup language that is then converted into HTML
+for your website.
+
+To convert from a markup language to HTML we use a tool called Sphinx_.
+Sphinx is a popular tool for creating web documentation for Python projects. It
 is part of a larger group of tools known as *Static Site Generators*. You can see a list of
 top static site generators at StaticGen_.
 
@@ -14,6 +17,10 @@ also allows inclusion of external files, which is GREAT for maintaining code sam
 examples of this at:
 
 http://arcade.academy/examples
+
+To get started with Sphinx, there's a sphinx-quickstart_ command that can build out
+some of the files to get started. Personally, I find it easier to start with an
+old project and copy/modify from there.
 
 Building API Docs From Code
 ---------------------------
@@ -72,3 +79,4 @@ Files and Directories for Documentation
 .. _Markdown: https://www.markdownguide.org/basic-syntax
 .. _RestructuredText: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 .. _ReadTheDocs: https://readthedocs.org/
+.. _sphinx-quickstart: https://www.sphinx-doc.org/en/master/usage/quickstart.html

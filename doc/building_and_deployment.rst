@@ -15,14 +15,25 @@ Building and Deployment
 
 Additional Build Info
 ---------------------
-* bdist / wheels - If you have the **wheel** package installed, you can create a
+* The command to build your project is ``python setup.py build``
+* bdist / wheels - If you have the `wheel package`_ installed, you can create a
   one-file distribution of your project. If the project is pure Python, that wheel
   can work on any platform. If you've got platform-specific libraries, you can
   make wheels for each platform. See Python's `packaging projects`_ for more info.
-* Twine - You can upload your project to the PyPi repository got other people to use, with the
-  twine_ module.
-* AWS - If you deploy on a server, Amazon Web Services has a great Python-based command-line
-  interface.
+  The command to create a wheel is ``python setup.py bdist_wheel``. This only works
+  if you have the wheel package installed.
+* Twine - Once your project is packaged in a wheel,
+  you can upload it to the PyPi repository for other people to use.
+  This is done with the twine_ module. It is simple as:
+
+.. code-block:: text
+
+    twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+* AWS - If you deploy on your own server, Amazon Web Services has a great Python-based command-line
+  interface as part of the `awscli package`_.
 
 .. _packaging projects: https://packaging.python.org/tutorials/packaging-projects/
 .. _twine: https://github.com/pypa/twine
+.. _wheel package: https://wheel.readthedocs.io/en/stable/
+.. _awscli package: https://aws.amazon.com/cli/
