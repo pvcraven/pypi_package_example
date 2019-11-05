@@ -15,10 +15,11 @@ There are only two required files, and one required directory:
   processing, it should just load in all the functions and classes that you
   plan on using in your project.
 * ``/setup.py`` This specifies how your project is to be built, and other
-  meta information about the project. See the example `setup.py`_ for this project.
-  Also, see the official `Writing the Setup Script`_ documentation.
-  You can build the project with ``python setup.py build``. A full list of
-  commands:
+  meta information about the project.
+
+Setup File In Detail
+--------------------
+When you run setup.py, you can get a full list of commands:
 
 .. code-block:: text
     :caption: setup.py options
@@ -71,9 +72,15 @@ There are only two required files, and one required directory:
        or: setup.py --help-commands
        or: setup.py cmd --help
 
+The setup.py file itself can be pretty simple. As it is Python, you can keep adding onto it
+as your project gets more complex and you need more customization. See the `setup.py documentation`_
+for an idea of what you can do with that file.
 
+.. literalinclude:: ../setup.py
+    :caption: setup.py
+    :linenos:
 
 
 .. _PyPi Package Index: https://pypi.org/
-.. _setup.py: https://github.com/pvcraven/pypi_package_example/blob/master/setup.py
+.. _setup.py documentation: https://github.com/pvcraven/pypi_package_example/blob/master/setup.py
 .. _Writing the Setup Script: https://docs.python.org/3.8/distutils/setupscript.html

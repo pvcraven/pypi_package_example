@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 from os import path
-import sys
 from setuptools import setup
 
 BUILD = 0
@@ -15,23 +14,13 @@ if __name__ == "__main__":
         'arcade',
     ]
 
-    # This project uses data classes. But data clases were introduced in 3.7.
-    # So if we are using 3.6, use an add-on package that backports it.
-    if sys.version_info[0] == 3 and sys.version_info[1] == 6:
-        install_requires.append('dataclasses')
-
-    if "--format=msi" in sys.argv or "bdist_msi" in sys.argv:
-        # hack the version name to a format msi doesn't have trouble with
-        VERSION = VERSION.replace("-alpha", "a")
-        VERSION = VERSION.replace("-beta", "b")
-        VERSION = VERSION.replace("-rc", "r")
-
     # Grab the long description out of the README
     fname = path.join(path.dirname(path.abspath(__file__)), "README.rst")
     with open(fname, "r") as f:
         long_desc = f.read()
 
-    # Here are our setup parameters
+    # Call the setup function with our setup parameters.
+    # This kicks off the build.
     setup(
           name="arcade",
           version=RELEASE,
@@ -41,7 +30,6 @@ if __name__ == "__main__":
           author_email="paul.craven@simpson.edu",
           license="MIT",
           url="https://pypi-package-example.readthedocs.io/en/latest/",
-          download_url="http://arcade.academy",
           install_requires=install_requires,
           packages=["pypi_package_example",
                     ],
@@ -65,4 +53,4 @@ if __name__ == "__main__":
                         'Issue Tracker': 'https://github.com/pvcraven/pypi_package_example/issues',
                         'Source': 'https://github.com/pvcraven/pypi_package_example',
           },
-         )
+    )
