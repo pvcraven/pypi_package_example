@@ -6,7 +6,7 @@
     :width: 20pt
     :height: 20pt
 
-.. |arrow| image:: https://img.icons8.com/ios-glyphs/30/000000/arrow.png
+.. |arrow| image:: https://img.icons8.com/android/24/000000/long-arrow-right.png
     :width: 20pt
     :height: 20pt
 
