@@ -1,3 +1,5 @@
+.. _testing:
+
 Testing
 =======
 
@@ -36,7 +38,7 @@ root folder. If that doesn't work:
   project folder.
 
 Code Coverage
----------
+-------------
 
 If you'd like to make sure that your unit tests cover all (or most) of your
 code, you can add the pytest-cov_ package. Then you can run PyTest with the

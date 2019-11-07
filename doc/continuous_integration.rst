@@ -11,6 +11,11 @@ already have it set up. Some of them include:
 * Jenkins_
 * TravisCI_
 
+.. _travis-ci:
+
+Travis CI
+---------
+
 In this example, we use TravisCI to do our builds. There is a `YAML`_ configuration
 file for TravisCI in the main file:
 

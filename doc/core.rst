@@ -14,6 +14,12 @@ There are only two required files, and one required directory:
   project. It is run when you import your package. It should not do much
   processing, it should just load in all the functions and classes that you
   plan on using in your project.
+
+.. _setup:
+
+Setup File
+----------
+
 * ``/setup.py`` This specifies how your project is to be built, and other
   meta information about the project.
 

@@ -26,6 +26,7 @@ Documentation
    code_formatting
    versioning
    tips
+   example_directory_tree
 
 Application Programming Interface
 ---------------------------------

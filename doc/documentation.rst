@@ -1,3 +1,5 @@
+.. _documentation:
+
 Package Documentation Files
 ===========================
 

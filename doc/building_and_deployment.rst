@@ -1,16 +1,39 @@
 Building and Deployment
 =======================
 
+.. _requirements:
+
+Requirements
+------------
+
 * ``/requirements.txt`` This should be a simple list of every package required
   to *develop* your project. The packages required to *run* the project go in
   setup.py. This file makes it easy for automatic setup of virtual environment,
   and automated builds.
+
+Setup
+-----
+
 * ``/setup.py`` This is one of the two required files.
   You can use the setup file to build the project. For more info,
   refer back to :ref:`core`.
+
+.. _make:
+
+Make File
+---------
+
 * ``/make.bat``, ``make.sh``, ``make.py`` There are so many different commands for building, testing,
   and deployment, I like having a "make" file with a instructions to make the process easier.
+
+Build Directory
+---------------
+
 * ``/build/`` This is automatically created by setup.py when you build.
+
+Distribution Directory
+----------------------
+
 * ``/dist/`` This is automatically created by setup.py when we build wheels.
 
 Additional Build Info
