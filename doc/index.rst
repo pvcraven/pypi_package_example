@@ -1,13 +1,21 @@
 Creating a Python Package
 =========================
 
-Creating a Python module/package can be as simple as two files.
+Getting started creating a Python package is very simple. Your project
+only needs two files, and a directory.
 
-You can improve
-your module to include documentation. With additional support files, your
-module can support automated building,
-deployment, testing,
-pre-commit hooks, auto-code formatting, and more.
+.. sidebar:: Module vs. Package
+
+    A Python *module* is any file with Python code in it.
+    A Python *package* has multiple Python modules.
+    A package has a ``__init__.py`` file in a directory of Python modules.
+
+Once you've got your package started, you can expand on it and add more
+features, testing, documentation, and more.
+
+This documentation shows how to build a modern Python package. If you
+already have a package and want to know what each file does, see
+:ref:`example-directory-tree`.
 
 Documentation
 -------------

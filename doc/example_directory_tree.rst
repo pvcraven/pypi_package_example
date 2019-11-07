@@ -1,5 +1,3 @@
-.. _example_directory_tree:
-
 .. |folder| image:: https://img.icons8.com/ios/50/000000/folder-invoices--v2.png
     :width: 20pt
     :height: 20pt
@@ -11,6 +9,8 @@
 .. |arrow| image:: https://img.icons8.com/ios-glyphs/30/000000/arrow.png
     :width: 20pt
     :height: 20pt
+
+.. _example-directory-tree:
 
 Example Directory Tree
 ======================
@@ -46,7 +46,7 @@ Example Directory Tree
 * |folder| tests |arrow| :ref:`testing`
 * |folder| venv
 * |file| `.gitignore`_ |arrow| :ref:`git`
-* |file| .pre-commit-config.yaml
+* |file| .pre-commit-config.yaml |arrow| :ref:`pre-commit-doc`
 * |file| .travis.yml |arrow| :ref:`travis-ci`
 * |file| CODE_OF_CONDUCT.md  |arrow| :ref:`code-of-conduct`
 * |file| conftest.py |arrow| :ref:`testing`

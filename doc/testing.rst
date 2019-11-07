@@ -77,6 +77,8 @@ and navigate your code coverage statistics. This is easy to add, by linking
 the Coveralls_ website to your GitHub account, turning on the project, and
 updating the ``/.travis.yml`` file to send over the data.
 
+.. _pre-commit-doc:
+
 Pre-Commit
 ----------
 
