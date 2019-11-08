@@ -43,3 +43,14 @@ Application Programming Interface
    :maxdepth: 4
 
    api
+
+Notes
+-----
+
+The official Python Packaging documentation:
+
+https://packaging.python.org/
+
+The official sample project:
+
+https://github.com/pypa/sampleproject
