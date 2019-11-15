@@ -49,6 +49,7 @@ Additional Build Info
   make wheels for each platform. See Python's `packaging projects`_ for more info.
   The command to create a wheel is ``python setup.py bdist_wheel``. This only works
   if you have the wheel package installed.
+* Manifest: https://packaging.python.org/guides/using-manifest-in/
 * Twine - Once your project is packaged in a wheel,
   you can upload it to the PyPi repository for other people to use.
   This is done with the twine_ module. It is simple as:
