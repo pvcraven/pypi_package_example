@@ -54,6 +54,7 @@ Example Directory Tree
 * |file| CONTRIBUTING.md |arrow| :ref:`contributing`
 * |file| license.rst |arrow| :ref:`license`
 * |file| make.bat |arrow| :ref:`make`
+* |file| MANIFEST.in |arrow| Use this to specify what should be in a source distribution
 * |file| README.rst |arrow| :ref:`readme`
 * |file| requirements.txt |arrow| :ref:`requirements`
 * |file| setup.py |arrow| :ref:`setup`

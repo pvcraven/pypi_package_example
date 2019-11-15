@@ -17,6 +17,14 @@ This documentation shows how to build a modern Python package. If you
 already have a package and want to know what each file does, see
 :ref:`example-directory-tree`.
 
+The official documentation for creating a Python package is at:
+
+http://packaging.python.org
+
+And their example is at:
+
+http://github.com/pypa/sampleproject
+
 Documentation
 -------------
 
