@@ -20,8 +20,12 @@ There are only two required files, and one required directory:
 Setup File
 ----------
 
-* ``/setup.py`` This specifies how your project is to be built, and other
-  meta information about the project.
+* ``/setup.py`` or ``/setup.cgf``. This specifies how your project is to be built, and other
+  meta information about the project. The ``/setup.py`` seems more common based on my
+  limited experience, but in 2016 `PEP 518`_ was provisionally accepted which specifies a different
+  setup method, to be stored in a file called ``setup.cfg``.
+
+.. _PEP 518: https://www.python.org/dev/peps/pep-0518/
 
 Setup File In Detail
 --------------------

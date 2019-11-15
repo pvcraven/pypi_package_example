@@ -41,6 +41,7 @@ Example Directory Tree
 
 * |folder| pypi_package_example
 
+    * |folder| __pypackages__ |arrow| See PEP 582
     * |file| __init__.py
 
 * |folder| tests |arrow| :ref:`testing`
