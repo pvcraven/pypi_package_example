@@ -10,6 +10,10 @@ Requirements
   to *develop* your project. The packages required to *run* the project go in
   setup.py. This file makes it easy for automatic setup of virtual environment,
   and automated builds.
+* Python programs often use a virtual environment in a folder (usually named venv).
+  Python has a lot of other tools like pipenv and more trying to solve this same
+  problem. Last year, PEP 582 was approved that will use a ``__pypackages__`` directory
+  that, if it exists, will be used instead of global packages.
 
 Setup
 -----
