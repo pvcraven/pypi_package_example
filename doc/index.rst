@@ -17,6 +17,10 @@ This documentation shows how to build a modern Python package. If you
 already have a package and want to know what each file does, see
 :ref:`example-directory-tree`.
 
+The source for this example is at:
+
+https://pypi-package-example.readthedocs.io/
+
 Documentation
 -------------
 
