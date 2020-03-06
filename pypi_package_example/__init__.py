@@ -1,3 +1,11 @@
+"""
+Documentation to introduce the package.
+"""
+
+# Version number of the project
+__version__ = "0.1.0"
+
+
 def my_function():
     """
     Sample function that prints Hi

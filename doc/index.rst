@@ -19,7 +19,7 @@ already have a package and want to know what each file does, see
 
 The source for this example is at:
 
-https://pypi-package-example.readthedocs.io/
+https://github.com/pvcraven/pypi_package_example
 
 Documentation
 -------------
@@ -28,6 +28,7 @@ Documentation
    :maxdepth: 4
 
    core
+   poetry_start
    git
    github
    building_and_deployment

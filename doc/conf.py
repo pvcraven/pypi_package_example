@@ -5,9 +5,10 @@ import os
 # Run the generate quick API index script
 # Then generate thumbnails if they do not exist
 import sys
+from pypi_package_example import __version__
 
 BUILD = 0
-VERSION = "1.0.0"
+VERSION = __version__
 RELEASE = VERSION
 
 
@@ -63,7 +64,7 @@ master_doc = "index"
 
 # General information about the project.
 project = "PyPi Package Example"
-copyright_text = "2019, Paul Vincent Craven"
+copyright_text = "2020, Paul Vincent Craven"
 author = "Paul Vincent Craven"
 
 # The version info for the project you're documenting, acts as replacement for
